@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ใช้ API</title>
+</head>
+<body>
+    <h1>ข้อมูลจาก API</h1>
+    <p id="data"></p>
+
+    <script>
+        const API_URL = "https://www.youtube.com/watch?v=SYimv4jSs-w&list=RDCByOEUAgNuE&index=21";
+
+        fetch(API_URL)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("data").innerHTML = JSON.stringify(data, null, 2);
+            });
+    </script>
+</body>
+</html>

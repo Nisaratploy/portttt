@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตอบใช่/ไม่ใช่</title>
+</head>
+<body>
+    <h1>พลอยกินข้าวกับอะไร</h1>
+    <button id="yes-button">1</button>
+    <button id="no-button">2</button>
+
+    <script>
+        const yesButton = document.getElementById("yes-button");
+        const noButton = document.getElementById("no-button");
+
+        yesButton.addEventListener("click", function() {
+            alert("ยังไม่ได้กินจ้า");
+        });
+
+        noButton.addEventListener("click", function() {
+            alert("ยังไม่ได้กินเหมือนกัน แค่เบอร์2");
+        });
+    </script>
+</body>
+</html>
